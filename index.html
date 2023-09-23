@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Aritmatika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Operasi Deret Fibonacci dan Volume</h1>
+        <h2>Nama: Made Wira Prayoga</h2>
+        <h2>NIM: 2215101005</h2>
+        <h2>Kelas: Reg A</h2>
+    </div>
+
+    <h1 class="judul">Kalkulator Aritmatika</h1>
+    <div class="container">
+        <div class="calculator">
+            <h2>Deret Fibonacci</h2>
+            <input type="number" id="fibonacci-input" placeholder="Masukkan jumlah angka">
+            <button onclick="generateFibonacci()">Hitung Fibonacci</button>
+            <p id="fibonacci-result"></p>
+
+            <h2>Menghitung Volume Bangun Ruang</h2>
+            <label for="shape">Pilih bangun ruang:</label>
+            <select id="shape">
+                <option value="balok">Balok</option>
+                <option value="kubus">Kubus</option>
+                <option value="bola">Bola</option>
+            </select>
+            <div id="dimension-inputs">
+                <input type="number" id="length" placeholder="Panjang">
+                <input type="number" id="width" placeholder="Lebar">
+                <input type="number" id="height" placeholder="Tinggi">
+                <input type="number" id="side" placeholder="Sisi">
+                <input type="number" id="radius" placeholder="Jari-Jari">
+            </div>
+            <button onclick="calculateVolume()">Hitung Volume</button>
+            <p id="volume-result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
